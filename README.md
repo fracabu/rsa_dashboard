@@ -1,118 +1,109 @@
-# Dashboard RSA ASL Roma 1
+<h1 align="center">RSA Dashboard</h1>
+<h3 align="center">Healthcare Facilities Analytics</h3>
 
-## 📋 Descrizione
-Dashboard interattiva per la visualizzazione e l'analisi delle strutture RSA nell'area dell'ASL Roma 1. La dashboard permette di esplorare, confrontare e analizzare i dati relativi alle strutture RSA, facilitando la scelta della struttura più adatta alle proprie esigenze.
+<p align="center">
+  <em>Interactive dashboard for analyzing RSA facilities in Rome</em>
+</p>
 
-## 🔧 Funzionalità Principali
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit" />
+  <img src="https://img.shields.io/badge/Folium-77B829?style=flat-square&logo=leaflet&logoColor=white" alt="Folium" />
+  <img src="https://img.shields.io/badge/Healthcare-E91E63?style=flat-square" alt="Healthcare" />
+</p>
 
-### 📍 Mappa Interattiva
-- Visualizzazione geografica di tutte le strutture RSA
-- Filtri per municipi e tipologie di strutture
-- Tooltip informativi al passaggio del mouse
-- Popup dettagliati al click sui marker
+<p align="center">
+  :gb: <a href="#english">English</a> | :it: <a href="#italiano">Italiano</a>
+</p>
 
-### 📊 Statistiche
-- Distribuzione dei posti letto per municipio
-- Rapporto tra posti totali e accreditati
-- Analisi delle tipologie di strutture
-- Metriche chiave del sistema RSA
+---
 
-### 📋 Dettagli Strutture
-- Ricerca strutture per nome
-- Visualizzazione dettagliata delle informazioni
-- Accesso rapido ai contatti
-- Informazioni sui servizi specializzati
+<a name="english"></a>
+## :gb: English
 
-### 🔍 Confronto
-- Confronto diretto tra due strutture
-- Analisi comparativa dei servizi
-- Visualizzazione grafica delle differenze
-- Metriche comparative
+### Overview
 
-### 📖 Guida
-- Istruzioni dettagliate per l'utilizzo
-- Spiegazione dei dati e delle metriche
-- Criteri di scelta della struttura
-- Suggerimenti per l'uso ottimale
+Interactive dashboard for visualizing and analyzing RSA (nursing home) facilities in ASL Roma 1 area. Explore, compare, and analyze facility data to find the best fit.
 
-## 🛠️ Requisiti Tecnici
+### Features
+
+- **Interactive Map** - Geographic view of all RSA facilities with filters
+- **Statistics** - Bed distribution, accreditation ratios, facility types
+- **Facility Details** - Search, detailed info, quick contact access
+- **Comparison** - Direct comparison between two facilities
+- **User Guide** - Usage instructions and selection criteria
+
+### Sections
+
+| Section | Description |
+|---------|-------------|
+| Map | Geographic visualization with tooltips |
+| Statistics | Metrics and distributions |
+| Details | Facility search and info |
+| Compare | Side-by-side analysis |
+| Guide | Instructions and criteria |
+
+### Quick Start
+
 ```bash
-streamlit==1.24.0
-pandas==2.0.3
-folium==0.14.0
-streamlit-folium==0.13.0
-geopy==2.3.0
-plotly==5.15.0
-```
-
-## 🚀 Installazione e Avvio
-
-1. Clona il repository:
-```bash
-git clone https://github.com/tuousername/dashboard-rsa.git
-cd dashboard-rsa
-```
-
-2. Crea e attiva un ambiente virtuale:
-```bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
-```
-
-3. Installa le dipendenze:
-```bash
+git clone https://github.com/fracabu/rsa_dashboard.git
+cd rsa_dashboard
 pip install -r requirements.txt
-```
-
-4. Avvia l'applicazione:
-```bash
 streamlit run app.py
 ```
 
-## 📦 Struttura del Progetto
+---
+
+<a name="italiano"></a>
+## :it: Italiano
+
+### Panoramica
+
+Dashboard interattiva per la visualizzazione e l'analisi delle strutture RSA nell'area dell'ASL Roma 1. Esplora, confronta e analizza i dati delle strutture per trovare quella piu adatta.
+
+### Funzionalita
+
+- **Mappa Interattiva** - Vista geografica di tutte le RSA con filtri
+- **Statistiche** - Distribuzione posti letto, rapporti accreditamento, tipologie
+- **Dettagli Strutture** - Ricerca, info dettagliate, contatti rapidi
+- **Confronto** - Confronto diretto tra due strutture
+- **Guida Utente** - Istruzioni uso e criteri di scelta
+
+### Sezioni
+
+| Sezione | Descrizione |
+|---------|-------------|
+| Mappa | Visualizzazione geografica con tooltip |
+| Statistiche | Metriche e distribuzioni |
+| Dettagli | Ricerca strutture e info |
+| Confronto | Analisi side-by-side |
+| Guida | Istruzioni e criteri |
+
+### Avvio Rapido
+
+```bash
+git clone https://github.com/fracabu/rsa_dashboard.git
+cd rsa_dashboard
+pip install -r requirements.txt
+streamlit run app.py
 ```
-dashboard-rsa/
-├── app.py              # Applicazione principale
-├── requirements.txt    # Dipendenze
-├── README.md          # Documentazione
-└── data/              # Dati delle strutture
-```
 
-## 📊 Dataset
-Il dataset include informazioni su 14 strutture RSA nell'area dell'ASL Roma 1, con dettagli su:
-- Nome e localizzazione
-- Posti letto totali e accreditati
-- Tipologie di assistenza
-- Servizi specializzati
-- Contatti e informazioni amministrative
+---
 
-## 🤝 Contributi
-Siete invitati a contribuire al progetto! Per farlo:
-1. Fate un fork del repository
-2. Create un branch per le vostre modifiche
-3. Inviate una pull request
+## Tech Stack
 
-## 📝 Note di Rilascio
-- Versione 1.0.0
-  - Rilascio iniziale con funzionalità base
-  - Integrazione mappa interattiva
-  - Sistema di confronto strutture
-  - Guida utente completa
+- Python, Streamlit
+- Pandas, Folium, Plotly
+- Geopy
 
-## 📄 Licenza
-Questo progetto è distribuito sotto licenza MIT. Vedere il file `LICENSE` per maggiori dettagli.
+## License
 
-## 👥 Team
-- Sviluppato per ASL Roma 1
-- Mantenuto da [Nome del Team/Organizzazione]
+MIT
 
-## 📞 Contatti
-Per supporto o informazioni:
-- Email: [inserire email]
-- Issue Tracker: GitHub Issues
+---
 
-## 🙏 Ringraziamenti
-- ASL Roma 1 per i dati e il supporto
-- OpenStreetMap per i dati cartografici
-- Streamlit per il framework di sviluppo
+<p align="center">
+  <a href="https://github.com/fracabu">
+    <img src="https://img.shields.io/badge/Made_by-fracabu-8B5CF6?style=flat-square" alt="Made by fracabu" />
+  </a>
+</p>
